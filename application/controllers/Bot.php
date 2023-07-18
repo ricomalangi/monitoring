@@ -135,6 +135,11 @@ class Bot extends CI_Controller
         }
     }
 
+    public function shedule_one_minute()
+    {
+        $this->index();
+        echo("<script type='text/javascript'>setInterval('window.location.reload()', 10000);</script>");
+    }
 }
 
 /* End of file Bot.php */
